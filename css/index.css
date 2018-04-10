@@ -1,0 +1,33 @@
+.sold {
+  margin: 10px 0;
+  width: 100%;
+  height: 22px;
+}
+.bar-unfill {
+  display: block;
+  width: 100%;
+  background-color: #eeeeee;
+  position: relative;
+  z-index: 5;
+}
+.bar-fill {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #ff9300;
+  /* 一些不支持背景渐变的浏览器 */
+  background: -moz-linear-gradient(left, #ff9300, #ea4515);
+  background: -webkit-linear-gradient(left, #ff9300, #ea4515);
+  background: linear-gradient(to right, #ff9300, #ea4515);
+  /* 标准的语法 */
+  width: 55%;
+  height: 22px;
+}
+.text {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  color: #fff;
+}
